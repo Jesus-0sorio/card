@@ -1,0 +1,144 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* contenedor */
+    position: absolute;
+    width: 500px;
+    height: 390px;
+    background: blueviolet;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 0;
+    border-radius: 30px;
+    /* organizacion */
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.bg {
+    width: auto;
+    height: 200px;
+    background: url(img/bg-1.jpg) center;
+    background-size: cover;
+    align-self: stretch;
+    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.avatar {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 45%);
+    align-self: center;
+}
+
+.perfil {
+    border-radius: 49%;
+    border: 5px solid blueviolet;
+}
+
+.info {
+    text-align: center;
+    position: relative;
+    top: 78px;
+}
+
+p {
+    margin: auto;
+    color: #f9f3fd;
+}
+
+.country {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 51%;
+    left: 58%;
+    transform: translate(36%, 36%);
+}
+
+.count {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.git {
+    background: url("img/git.svg");
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin {
+    background: url("img/link.svg");
+    width: 30px;
+    height: 30px;
+}
+
+.git:hover {
+    background: url("img/git-black.svg") no-repeat;
+}
+
+.linkedin:hover {
+    background: url("img/linkedin.svg");
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 80%;
+        height: 45%;
+    }
+
+    .avatar {
+        min-height: 38%;
+        min-width: 38%;
+        top: -2%; 
+    }
+}
+
+@media (max-height: 750px) {
+    .card {
+        width: 80%;
+        height: 55%;
+    }
+    .country {
+        top: 48%;
+    }
+}
+
+@media (max-height: 920px) {
+    .country {
+        top: 48%;
+    }    
+}
+
+@media (max-width: 300px) {
+    .info {
+        margin-top: -22px;
+    }
+}
